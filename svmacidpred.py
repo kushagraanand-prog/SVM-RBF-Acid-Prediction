@@ -53,7 +53,7 @@ if st.button("Predict Acid Concentration"):
     else:
         # Prepare input exactly as trained
         input_df = pd.DataFrame(
-            [[temperature, conductivity]],
+            [[conductivity, temperature]],
             columns=feature_order
         )
 
